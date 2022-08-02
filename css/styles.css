@@ -46,11 +46,10 @@ img {
 }
 
 .container {
-    padding-left: auto;
-    padding-right: auto;
     margin-right: 15px;
     margin-left: 15px;
-    width: 1230px;
+    margin: 0 auto;
+    width: 1200px;
 }
 
 .header {
@@ -120,6 +119,7 @@ img {
     list-style: none;
     display: flex;
     column-gap: 50px;
+    padding-left: 0;
 }
 
 .header-link {
@@ -167,13 +167,15 @@ img {
 
 /*----------MAIN---------------------*/
 
-.main {
-    background-color: #2F303A;
-}
-
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.main {
+    background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .main-title {
@@ -186,6 +188,7 @@ img {
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 30px;
+        width: 696px;
         color: #FFFFFF;
 }
 
@@ -203,6 +206,22 @@ img {
         margin-left: auto;
         margin-right: auto;
         color: #FFFFFF;
+}
+
+.main-btn {
+    width: 200px;
+        height: 50px;
+        left: 700px;
+        top: 430px;
+        padding-left: 32px;
+    
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+}
+
+.hero {
+    padding-bottom: 0;
 }
 
 .hero-article {
@@ -228,6 +247,7 @@ img {
     display: flex;
     gap: 30px;
     list-style: none;
+    padding-left: 0;
 }
 
 .hero-title {
@@ -264,6 +284,7 @@ img {
     display: flex;
     gap: 30px;
     list-style: none;
+    padding-left: 0;
 }
 
 
@@ -277,6 +298,7 @@ img {
     list-style: none;
     display: flex;
     gap: 30px;
+    padding-left: 0;
 }
 
 .team-item {
@@ -327,6 +349,8 @@ img {
 .footer {
     background-color: #2F303A;
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -338,10 +362,7 @@ img {
             font-size: 26px;
             line-height: 31px;
             letter-spacing: 0.03em;
-            margin-top: 60px;
-            margin-right: 93px;
             margin-bottom: 20px;
-        
             color: #2196F3;
 }
 
@@ -355,6 +376,7 @@ img {
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: #FFFFFF;
+        margin-bottom: 9px;
 }
 
 .footer-adress {
@@ -367,17 +389,17 @@ img {
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 9px;
 }
 
 .footer-tel {
     text-decoration: none;
-    margin-bottom: 9px;
-    color: var(--main-text-color);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-mail {
     text-decoration: none;
-    color: var(--main-text-color);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-tel:hover,
@@ -402,11 +424,15 @@ img {
 }
 */
 
+.portfolio {
+    padding-top: 85px;
+    padding-bottom: 103px;
+}
+
 .portfolio-list {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-top: 100px;
     margin-bottom: 50px;
     list-style: none;
 }
@@ -415,15 +441,15 @@ img {
     font-weight: 500;
     font-family: inherit;
     cursor: pointer;
-        font-size: 16px;
-        line-height: 1.62;
-        text-align: center;
-        letter-spacing: 0.03em;
-        border: none;
-        width: 128px;
-            height: 38px;
-            left: 576px;
-            top: 174px;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
         
             background: #F5F4FA;
             border-radius: 4px;
@@ -462,6 +488,7 @@ img {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    padding-left: 0;
 }
 
 .works-title {
@@ -469,9 +496,6 @@ img {
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        margin-right: 24px;
-        margin-left: 24px;
-        padding-bottom: 4px;
     
         color: var(--main-title-color);
 }
@@ -480,9 +504,6 @@ img {
         font-size: 16px;
         line-height: 1.87;
         letter-spacing: 0.03em;
-        margin-right: 24px;
-        margin-bottom: 20px;
-        margin-left: 24px;
     
         color: var(--main-text-color);
 }
@@ -491,8 +512,10 @@ img {
 .works-border {
     border: 1px solid #EEEEEE;
     border-top: none;
-    margin-bottom: 20px;
     padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
 
 .works-img {
